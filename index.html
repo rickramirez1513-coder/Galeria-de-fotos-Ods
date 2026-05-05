@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<h1>Galería</h1>
+
+<div class="galeria">
+<img src="https://th.bing.com/th/id/OIP.ieq3ublUxK8UXYdpo1fTAwHaHa?w=195&h=195&c=7&r=0&o=7&pid=1.7&rm=3" onclick="abrirModal(0)">
+<img src="https://th.bing.com/th/id/OIP.Mn3IjXY3k-XzL4pSfnablgHaE8?w=292&h=195&c=7&r=0&o=7&pid=1.7&rm=3" onclick="abrirModal(1)">
+<img src="https://th.bing.com/th/id/OIP.evNkD9_bU8X09BlRiMkH2QHaE8?w=293&h=195&c=7&r=0&o=7&pid=1.7&rm=3" onclick="abrirModal(2)">
+<img src="https://th.bing.com/th/id/OIP.DFw4Etn4gvXnpUsu8pOynwHaE8?w=293&h=195&c=7&r=0&o=7&pid=1.7&rm=3" onclick="abrirModal(3)">
+<img src="https://th.bing.com/th/id/OIP.R3CTKEN1VLaSdkHRZdkM4QHaE7?w=359&h=195&c=7&r=0&o=7&pid=1.7&rm=3" onclick="abrirModal(4)">
+</div>
+
+<div id="modal" class="modal">
+<span class="cerrar" onclick="cerrarModal()">✖</span>
+<span class="prev" onclick="cambiar(-1)">❮</span>
+<img id="imagenGrande">
+<span class="next" onclick="cambiar(1)">❯</span>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
